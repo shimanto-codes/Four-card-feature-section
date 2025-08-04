@@ -107,6 +107,7 @@ align-self: center;
 @media screen and (max-width:750px) {
   .main{
     grid-template-columns: auto;
+    padding-bottom: 50px;
   }
   .box_container{
     display: flex;
