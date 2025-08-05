@@ -32,18 +32,19 @@ body{
 .container{
   max-width: 1200px;
   margin: 0 auto ;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 header{
   text-align: center;
 }
 header h2 {
   color: var(--Grey400);
-  font-size: 28px;
+  font-size: 32px;
 }
 header h1{
   color: var(--Grey500);
   margin-bottom: 15px;
+  font-size: 35px;
 }
 header p{
   display: inline-block;
