@@ -39,7 +39,8 @@ header{
 }
 header h2 {
   color: var(--Grey400);
-  font-size: 32px;
+  font-size: 35px;
+  font-weight: 200;
 }
 header h1{
   color: var(--Grey500);
