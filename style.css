@@ -15,6 +15,7 @@
   --ff-primary:"Poppins", sans-serif;
   --psize: 15px; 
 }
+/*  Reset styles */
 *, *::after, *::before{
   margin: 0;
   padding: 0;
@@ -23,17 +24,22 @@
 body, html{
   height: 100%; 
 }
+/*  Base styles */
 body{
   background-color: #fafafa;
   font-size: var(--psize);
   font-family: var(--ff-primary);
   color: var(--Grey400);
 }
+/*  Container for page content */
+
 .container{
   max-width: 1200px;
   margin: 0 auto ;
   padding-top: 100px;
 }
+
+/* 📌 Header section */
 header{
   text-align: center;
 }
@@ -52,6 +58,8 @@ header p{
   max-width: 500px;
   text-align: center;  
 }
+/* Main card grid */
+
 .main{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -59,6 +67,8 @@ header p{
   margin-top: 50px;
   padding: 20px;
 }
+/*  Individual card box */
+
 .box{
   background-color: white;
   padding: 30px;
@@ -66,10 +76,14 @@ header p{
   border-radius: 10px;
   text-align: right;
 }
+/* Text inside cards */
+
 .box_text{
   text-align: left;
   padding-bottom: 40px;
 }
+/*  Top border colors per card */
+
 .box1{
 border-top:5px solid var(--Cyan) ;
 align-self: center;
@@ -87,11 +101,17 @@ align-self: center;
 .box_text h3{
   color: var(--Grey500);
 }
+/*  Middle container for stacking cards */
+
 .box_container{
   display: flex;
   flex-direction: column;
   gap: 30px;  
 }
+
+/* 📱 Responsive styles */
+
+  /* Tablet view: switch to 2 columns */
 @media screen and (max-width:1050px) {
   .container{
     max-width: 90%;
@@ -106,6 +126,7 @@ align-self: center;
     display: contents;/* Removes the extra flex structure and allows .box2 and .box3 to flow in the grid */
   }
 }
+  /* Small tablets and phone switch to 1 column */
 @media screen and (max-width:750px) {
   .container{
     padding-top: 50px;
@@ -118,6 +139,8 @@ align-self: center;
     display: flex;
   }
 }
+  /* Phones: smaller font sizes */
+
 @media screen and (max-width:450px)  {
   header h1{
     font-size: 25px;
